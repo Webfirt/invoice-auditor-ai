@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Integrity AI | Next-Gen Financial Auditing</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        
+        @keyframes infiniteScroll {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+        .carousel-track {
+            display: flex;
+            width: calc(350px * 14); /* Ajusté pour le nombre d'items */
+            animation: infiniteScroll 40s linear infinite;
+        }
+        .carousel-track:hover { animation-play-state: paused; }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #2563eb, #000000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-[#fafafa] text-gray-900">
+
+    <nav class="sticky top-0 z-50 glass border-b border-gray-100 px-8 py-4 flex justify-between items-center">
+        <div class="text-xl font-extrabold tracking-tighter">
+            <span class="text-blue-600">INVOICE</span><span class="text-black">INTEGRITY.AI</span>
+        </div>
+        <div class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-widest text-gray-500">
+            <a href="#solution" class="hover:text-blue-600 transition">Solution</a>
+            <a href="#audit" class="hover:text-blue-600 transition">Live Demo</a>
+            <a href="#partners" class="hover:text-blue-600 transition">Technology Stack</a>
+        </div>
+        <a href="#audit" class="bg-black text-white px-5 py-2 rounded-full text-xs font-bold hover:bg-blue-600 transition">GET STARTED</a>
+    </nav>
+
+    <section class="relative pt-20 pb-32 px-6 overflow-hidden">
+        <div class="max-w-6xl mx-auto text-center relative z-10">
+            <span class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-blue-600 bg-blue-50 rounded-full">ERNIE HACKATHON 2025</span>
+            <h1 class="text-6xl md:text-7xl font-extrabold text-black mb-8 tracking-tight">
+                Audit Invoices with <br><span class="gradient-text">Precision AI.</span>
+            </h1>
+            <p class="text-xl text-gray-500 max-w-3xl mx-auto mb-12 leading-relaxed">
+                Harnessing <strong>ERNIE 4.5 & CAMEL-AI</strong> to eliminate accounting fraud. 
+                Real-time data extraction and multi-agent integrity checks.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="#audit" class="bg-blue-600 text-white px-10 py-5 rounded-2xl font-bold shadow-2xl shadow-blue-200 hover:scale-105 transition transform">Start Instant Audit</a>
+            </div>
+        </div>
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-blue-50 rounded-full -z-0 opacity-50 blur-3xl"></div>
+    </section>
+
+    <section id="solution" class="py-24 bg-black text-white px-8">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+            <div>
+                <h2 class="text-4xl font-extrabold mb-8">Intelligence for <br>Financial Compliance.</h2>
+                <div class="space-y-8">
+                    <div class="flex gap-4">
+                        <div class="bg-blue-600 w-12 h-12 rounded-lg flex items-center justify-center shrink-0">✔</div>
+                        <div>
+                            <h4 class="text-xl font-bold">Multi-Agent Verification</h4>
+                            <p class="text-gray-400">Powered by CAMEL-AI to cross-verify supplier data and tax calculations.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="bg-white w-12 h-12 rounded-lg flex items-center justify-center shrink-0 text-black font-bold">AI</div>
+                        <div>
+                            <h4 class="text-xl font-bold">Fine-tuned with LLaMA-Factory</h4>
+                            <p class="text-gray-400">Models optimized specifically for financial document parsing and OCR correction.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="bg-gradient-to-br from-blue-600 to-blue-800 p-12 rounded-[40px] shadow-2xl rotate-3">
+                    <p class="text-2xl font-light italic leading-relaxed">
+                        "Automating invoice audits is not just about speed, it's about 100% financial transparency for businesses."
+                    </p>
+                    <div class="mt-8 flex items-center gap-4">
+                        <div class="w-12 h-12 bg-white/20 rounded-full overflow-hidden border border-white/30">
+                            <img src="../src/Godfroy_profile.jpg" alt="Godfroy Senakpon" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <p class="font-bold">Godfroy Senakpon AIDOMOAN</p>
+                            <p class="text-sm text-blue-200">Lead Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="audit" class="py-32 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold mb-4 text-black">Live Audit Engine</h2>
+                <p class="text-gray-500">Test the power of ERNIE 4.5 & Mistral agents.</p>
+            </div>
+            <div class="bg-white p-10 rounded-[32px] shadow-2xl border border-gray-100 relative overflow-hidden">
+                <div class="relative z-10">
+                    <div class="border-2 border-dashed border-gray-200 rounded-2xl p-12 text-center mb-8 hover:border-blue-500 transition-all bg-gray-50/50">
+                        <input type="file" id="invoiceFile" class="hidden" accept="image/*">
+                        <label for="invoiceFile" class="cursor-pointer group">
+                            <div class="w-16 h-16 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition text-2xl">+</div>
+                            <div class="text-lg font-bold text-gray-700">Upload Invoice</div>
+                            <div id="fileName" class="text-sm text-gray-400 mt-2">JPG, PNG up to 10MB</div>
+                        </label>
+                    </div>
+                    <button onclick="uploadInvoice()" id="btnUpload" class="w-full bg-black text-white py-5 rounded-2xl font-extrabold text-lg hover:bg-blue-600 transition-all">
+                        RUN AUDIT ENGINE
+                    </button>
+                    <div id="loader" class="hidden mt-10 text-center">
+                        <p class="text-sm font-bold text-blue-600 animate-pulse">ERNIE AI IS ANALYZING...</p>
+                    </div>
+                    <div id="result" class="hidden mt-12">
+                        <div id="auditBadge" class="mb-6 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-widest inline-block"></div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div class="p-6 bg-gray-50 rounded-2xl">
+                                <p class="text-xs font-bold text-gray-400 uppercase mb-1">Supplier</p>
+                                <p id="resSupplier" class="text-lg font-bold text-black"></p>
+                            </div>
+                            <div class="p-6 bg-gray-50 rounded-2xl">
+                                <p class="text-xs font-bold text-gray-400 uppercase mb-1">Total Amount</p>
+                                <p id="resTotal" class="text-lg font-bold text-blue-600"></p>
+                            </div>
+                        </div>
+                        <div id="auditMsg" class="mt-6 p-6 border-l-4 border-blue-600 bg-blue-50/50 rounded-r-2xl text-sm italic"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="partners" class="py-32 bg-white overflow-hidden border-t border-gray-50">
+        <h4 class="text-center text-xs font-black text-gray-400 uppercase tracking-[0.4em] mb-20 font-bold">Integrated Ecosystem & Frameworks</h4>
+        
+        <div class="relative flex overflow-hidden">
+            <div class="carousel-track">
+                <div class="flex flex-col items-center w-[350px] mx-10 px-8 py-10 rounded-3xl border border-gray-100 bg-white hover:shadow-xl transition">
+                    <img src="../src/baidu.png" class="h-16 mb-6" alt="Baidu">
+                    <h5 class="font-black text-lg">Baidu ERNIE 4.5</h5>
+                    <p class="text-center text-sm text-gray-400 mt-4 leading-relaxed">The flagship LLM providing the advanced reasoning for complex audit logs.</p>
+                </div>
+                <div class="flex flex-col items-center w-[350px] mx-10 px-8 py-10 rounded-3xl border border-gray-100 bg-white hover:shadow-xl transition">
+                    <img src="../src/Black_Logo.png" class="h-16 w-16 rounded-full mb-6" alt="D-Robotics">
+                    <h5 class="font-black text-lg">D-Robotics</h5>
+                    <p class="text-center text-sm text-gray-400 mt-4 leading-relaxed">Infrastructure support for AI-driven automation in the Beninese ecosystem.</p>
+                </div>
+                <div class="flex flex-col items-center w-[350px] mx-10 px-8 py-10 rounded-3xl border border-gray-100 bg-white hover:shadow-xl transition">
+                    <img src="../src/Copy_of_unsloth_final_space_black.png" class="h-16 w-16 rounded-full mb-6" alt="Unsloth">
+                    <h5 class="font-black text-lg">Unsloth AI</h5>
+                    <p class="text-center text-sm text-gray-400 mt-4 leading-relaxed">Used for 2x faster model training and low-memory inference on local nodes.</p>
+                </div>
+                <div class="flex flex-col items-center w-[350px] mx-10 px-8 py-10 rounded-3xl border border-gray-100 bg-white hover:shadow-xl transition">
+                    <img src="https://raw.githubusercontent.com/camel-ai/camel/master/docs/_static/camel-logo.png" class="h-16 mb-6" alt="CAMEL-AI">
+                    <h5 class="font-black text-lg">CAMEL-AI</h5>
+                    <p class="text-center text-sm text-gray-400 mt-4 leading-relaxed">Multi-agent communicative framework used for cross-audit roleplay.</p>
+                </div> 
+                <div class="flex flex-col items-center w-[350px] mx-10 px-8 py-10 rounded-3xl border border-gray-100 bg-white hover:shadow-xl transition">
+                    <img src="https://avatars.githubusercontent.com/u/161453180?s=200&v=4" class="h-16 mb-6 rounded-lg" alt="LLaMA-Factory">
+                    <h5 class="font-black text-lg">LLaMA-Factory</h5>
+                    <p class="text-center text-sm text-gray-400 mt-4 leading-relaxed">Centralized fine-tuning platform used to adapt models to financial datasets.</p>
+                </div> 
+
+                <div class="flex flex-col items-center w-[350px] mx-10 px-8 py-10 rounded-3xl border border-gray-100 bg-white">
+                    <img src="../src/baidu.png" class="h-16 mb-6" alt="Baidu">
+                    <h5 class="font-black text-lg">Baidu ERNIE</h5>
+                </div>
+                <div class="flex flex-col items-center w-[350px] mx-10 px-8 py-10 rounded-3xl border border-gray-100 bg-white">
+                    <img src="../src/Black_Logo.png" class="h-16 w-16 rounded-full mb-6">
+                    <h5 class="font-black text-lg">D-Robotics</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-gray-400 text-xs border-t border-gray-100">
+        &copy; 2025 Invoice Integrity AI - Built by Godfroy Senakpon
+    </footer>
+
+    <script>
+        const fileInput = document.getElementById('invoiceFile');
+        fileInput.onchange = () => { 
+            if(fileInput.files[0]) document.getElementById('fileName').innerText = "Selected: " + fileInput.files[0].name; 
+        };
+
+        async function uploadInvoice() {
+            const file = fileInput.files[0];
+            if (!file) { alert("Please select a file"); return; }
+
+            const formData = new FormData();
+            formData.append('file', file);
+
+            document.getElementById('loader').classList.remove('hidden');
+            document.getElementById('result').classList.add('hidden');
+            document.getElementById('btnUpload').disabled = true;
+
+            try {
+                const response = await fetch('/api/invoices/upload-and-audit', {
+                    method: 'POST',
+                    body: formData
+                });
+                const res = await response.json();
+                const data = res.data.structured_data;
+
+                document.getElementById('resSupplier').innerText = data.supplier || "N/A";
+                document.getElementById('resTotal').innerText = `${data.total_amount_ttc_extracted} ${data.currency || ''}`;
+                document.getElementById('auditMsg').innerText = data.audit_message;
+
+                const badge = document.getElementById('auditBadge');
+                if (data.is_audited_ok) {
+                    badge.innerText = "VERIFIED BY ERNIE ✅";
+                    badge.className = "mb-6 px-4 py-1.5 rounded-full text-xs font-black tracking-widest inline-block bg-green-100 text-green-700";
+                } else {
+                    badge.innerText = "FRAUD RISK DETECTED ❌";
+                    badge.className = "mb-6 px-4 py-1.5 rounded-full text-xs font-black tracking-widest inline-block bg-red-100 text-red-700";
+                }
+
+                document.getElementById('result').classList.remove('hidden');
+            } catch (err) {
+                alert("Check if your backend is running.");
+            } finally {
+                document.getElementById('loader').classList.add('hidden');
+                document.getElementById('btnUpload').disabled = false;
+            }
+        }
+    </script>
+</body>
+</html>
